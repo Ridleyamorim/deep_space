@@ -10,3 +10,7 @@ def imagem(request, photo_id):
     photography = get_object_or_404(Photography, pk=photo_id)
 
     return render(request, 'gallery/imagem.html', {"photography": photography})
+
+def buscar(request):
+
+    return render(request, 'gallery/buscar.html')
